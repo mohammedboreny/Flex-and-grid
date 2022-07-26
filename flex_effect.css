@@ -7,10 +7,10 @@
 nav {
     background: #222;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    
-    
+
+
 }
 
 nav img {
@@ -24,20 +24,16 @@ nav img {
 a {
     color: white;
     text-decoration: none;
-    justify-content: space-around;
+
+
 
 }
 
-ul {
-    flex-basis: 400px;
-    justify-content: space-around;
-    display: flex;
-    list-style: none;
-}
 
 li {
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
+
 
 }
 
@@ -76,20 +72,17 @@ div {
 
 }
 
-div>p:nth-of-type(1) {
+div>section>p {
     width: 465px;
-    height: 400px;
+    height: 380px;
     overflow: scroll;
 
 }
 
-p:nth-of-type(1)::-webkit-scrollbar {
+div>section>p::-webkit-scrollbar {
     display: none;
 }
 
-p::-webkit-scrollbar {
-    display: none;
-}
 
 footer {
     height: 90px;
