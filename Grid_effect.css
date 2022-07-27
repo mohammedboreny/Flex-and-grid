@@ -6,48 +6,52 @@
 
 nav {
     display: grid;
-   
     grid-auto-flow: column;
-    height: inherit;
+    margin: 30px;
+    background-color: darkgray
+}
 
-    background-color: darkgray}
+nav>img {
 
-    nav > img {   
-        
-        display: grid;
-        border-radius: 0.5rem;
-        padding: 2rem;
-
-    }
+    display: grid;
+    border-radius: 0.5rem;
+    margin: 10px
+}
 
 a {
     color: black;
     text-decoration: none;
-    justify-content: center;
+    line-height: 50px;
 
 }
-li{
+
+li {
+    margin: 20px;
     list-style: none;
-    margin: 50px;
+    display: grid;
+    line-height: 50%;
+
+
 }
 
 /* ------------------------------------------------------------------------------------------- */
 header {
     display: grid;
     justify-content: center;
-    
+
 
 }
 
 main {
     display: grid;
-    
+
     grid-auto-flow: column;
 
-    grid-column-gap:25px; 
+    grid-column-gap: 25px;
     justify-content: center;
     width: 100%;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 
 div {
@@ -56,20 +60,30 @@ div {
     grid-auto-flow: column;
     width: 100%;
 
-
+    margin: 30px;
 }
 
-p {
+div>section>p {
     grid-auto-flow: column;
 
-    width: 465px;
-    height: 400px;
+
     overflow: scroll;
     display: grid;
 
+
 }
 
-p::-webkit-scrollbar {
+div>section>button {
+    width: 20%;
+}
+
+div>section {
+    display: grid;
+    width: 430px;
+    height: 400px;
+}
+
+div>section>p::-webkit-scrollbar {
     display: none;
 }
 
